@@ -36,7 +36,7 @@ void overClockSkills(){
 
     intakeMotorVoltage = 0;
     scoreScoring();
-    pros::delay(450);
+    pros::delay(450); //sakdaslk
     lift.set_value(false);
 
     chassis.moveToPoint(0, 13.8, 800, {.forwards = true, .maxSpeed = 127}, false);
