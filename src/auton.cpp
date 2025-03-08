@@ -41,7 +41,7 @@ void overClockSkills(){
 
     chassis.moveToPoint(0, 13.8, 800, {.forwards = true, .maxSpeed = 127}, false);
     chassis.setPose(0, 0, 0);
-
+    //nigger
     intakeMotorVoltage = -127;
     chassis.swingToHeading(121, DriveSide::RIGHT, 1000, {.maxSpeed = 127}, false);
     chassis.setPose(0, 0, 0);
