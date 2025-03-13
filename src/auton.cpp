@@ -33,7 +33,7 @@ void overClockSkills(){
     chassis.setPose(0, 0, 0);
 
     lift.set_value(true);
-    chassis.moveToPoint(0, -8, 500, {.forwards = false, .maxSpeed = 105}, false);
+    chassis.moveToPoint(0, -6, 500, {.forwards = false, .maxSpeed = 105}, false);
     chassis.setPose(0, 0, 0);
 
     intakeMotorVoltage = 0;
@@ -41,23 +41,23 @@ void overClockSkills(){
     pros::delay(650);
     lift.set_value(false);
 
-    chassis.moveToPoint(0, 16.3, 800, {.forwards = true, .maxSpeed = 127}, false);
+    chassis.moveToPoint(0, 14.3, 800, {.forwards = true, .maxSpeed = 127}, false);
     chassis.setPose(0, 0, 0);
     
     intakeMotorVoltage = -127;
-    chassis.swingToHeading(125, DriveSide::RIGHT, 1500, {.maxSpeed = 90}, false);
+    chassis.swingToHeading(123, DriveSide::RIGHT, 1500, {.maxSpeed = 90}, false);
     chassis.setPose(0, 0, 0);
 
-    chassis.moveToPoint(0, 37.5, 1350, {.forwards = true, .maxSpeed = 70}, false);
+    chassis.moveToPoint(0, 37.5, 1450, {.forwards = true, .maxSpeed = 70}, false);
     chassis.setPose(0, 0, 0);
 
     pros::delay(200);
 
-    chassis.turnToHeading(-14.8, 600,  {.maxSpeed = 100}, false);
+    chassis.turnToHeading(-13.3, 600,  {.maxSpeed = 100}, false);
     chassis.setPose(0, 0, 0);
     
-    chassis.moveToPoint(0, -102, 2500, {.forwards = false, .maxSpeed = 90}, true);
-    chassis.waitUntil(98);
+    chassis.moveToPoint(0, -100, 2500, {.forwards = false, .maxSpeed = 78}, true);
+    chassis.waitUntil(98.5);
     clamp.set_value(true);
     intakeMotorVoltage = 0;
     pros::delay(100);
@@ -67,40 +67,95 @@ void overClockSkills(){
     chassis.setPose(0,0,0);
     intakeMotorVoltage = -127;
 
-    chassis.moveToPoint(0, 40, 1200,  {.forwards = true, .maxSpeed = 127}, false);
+    chassis.moveToPoint(0, 41.5, 1200,  {.forwards = true, .maxSpeed = 127}, false);
     chassis.setPose(0,0, 0);
 
-    chassis.turnToHeading(112, 1000, {.maxSpeed = 100}, false);
+    chassis.turnToHeading(107, 1000, {.maxSpeed = 100}, false);
     chassis.setPose(0,0, 0);
 
-    chassis.moveToPoint(0, 22, 1200, {.forwards = true, .maxSpeed = 127}, false);
+    chassis.moveToPoint(0, 23.5, 1200, {.forwards = true, .maxSpeed = 127}, false);
     chassis.setPose(0, 0, 0);
 
-    pros::delay(200);
+    pros::delay(350);
     scoreScoring();
 
-    chassis.moveToPoint(0, -24, 1200, {.forwards = false, .maxSpeed = 127}, false);
+    chassis.moveToPoint(0, -22.5, 1200, {.forwards = false, .maxSpeed = 127}, false);
     chassis.setPose(0,0, 0);
 
     chassis.turnToHeading(28, 600, {.maxSpeed = 100}, false);
     chassis.setPose(0,0, 0);
 
-    chassis.moveToPoint(0, 30, 1600,  {.forwards = true, .maxSpeed = 80}, false);
+    chassis.moveToPoint(0, 20, 800,  {.forwards = true, .maxSpeed = 80}, false);
+    chassis.setPose(0,0, 0);
+    chassis.moveToPoint(0, 11.5, 800,  {.forwards = true, .maxSpeed = 80}, false);
     chassis.setPose(0,0, 0);
 
-    pros::delay(200);
+
+    pros::delay(350);
     scoreScoring();
 
-    chassis.moveToPoint(0, -16, 1600,  {.forwards = false, .maxSpeed = 95}, false);
+    chassis.moveToPoint(0, -8, 1600,  {.forwards = false, .maxSpeed = 95}, false);
     chassis.setPose(0,0, 0);
 
-    chassis.turnToHeading(140, 600, {.maxSpeed = 100}, false);
+    chassis.turnToHeading(123, 1000, {.maxSpeed = 100}, false);
     chassis.setPose(0, 0, 0);
 
-    chassis.moveToPoint(0, -25, 1600, {.forwards = false, .maxSpeed = 120}, false);
+    chassis.moveToPoint(0, -14.5, 1600, {.forwards = false, .maxSpeed = 120}, false);
     chassis.setPose(0,0, 0);
 
     clamp.set_value(false);
+    pros::delay(100);
+
+    intakeMotorVoltage = -127;
+
+    chassis.moveToPoint(0, 12.5, 750, {.forwards = true, .maxSpeed = 120}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.swingToHeading(58.5, DriveSide::RIGHT, 850, {.maxSpeed = 90}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.moveToPoint(0, 88, 2500, {.forwards = true, .maxSpeed = 110}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.turnToHeading(88, 550, {.maxSpeed = 100}, false);
+    chassis.setPose(0,0,0);
+
+    chassis.moveToPoint(0, -54, 1500, {.forwards = false, .maxSpeed = 120}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.moveToPoint(0, 3, 500, {.forwards=true,.maxSpeed=115},false);
+    chassis.setPose(0,0, 0);
+
+    chassis.turnToHeading(90, 550, {.maxSpeed=120},false);
+    chassis.setPose(0,0, 0);
+
+    chassis.moveToPoint(0, -16, 500, {.forwards = false, .maxSpeed = 120}, false);
+    chassis.setPose(0,0, 0);
+
+    pros::delay(350);
+    scoreScoring();
+   
+    chassis.moveToPoint(0, 2, 500, {.forwards=true,.maxSpeed=115},false);
+    chassis.setPose(0,0, 0);
+
+    chassis.swingToHeading(-115, DriveSide::LEFT, 850, {.maxSpeed = 90}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.moveToPoint(0, 60, 1500, {.forwards=true,.maxSpeed=115},false);
+    chassis.setPose(0,0, 0);
+
+    chassis.moveToPoint(0, -10, 750, {.forwards=false,.maxSpeed=115}, false);
+    chassis.setPose(0,0, 0);
+
+    chassis.swingToHeading(120, DriveSide::LEFT, 1000, {.maxSpeed = 90}, false);
+    chassis.setPose(0,0, 0);
+
+    intakeMotorVoltage = -127;
+
+    chassis.moveToPoint(0, 75, 1500, {.forwards=true,.maxSpeed=115},false);
+    chassis.setPose(0,0, 0);
+
+
 
     /*    
     chassis.turnToHeading(90, 750,  {.maxSpeed = 100}, false);
